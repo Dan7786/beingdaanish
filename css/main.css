@@ -23,6 +23,48 @@
 .mars-img{
 	width: 100%;
 }
+.box {
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.box{
+    animation-name: box;
+    animation-timing-function: ease;
+}
+.intro h2{
+	color: #8d8d8d;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 11px;
+    font-family: "Open Sans",sans-serif;
+    letter-spacing: 3px;
+    -webkit-animation: myanim2 1s 1.8s backwards;
+    animation: myanim2 1s 1.8s backwards;
+}
+.contact{
+	color: #ffeb00;
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-family: "Open Sans",sans-serif;
+    text-decoration: none !important;
+    padding: 10px 18px;
+    border: 1px solid #ffeb00;
+    margin-top: 25px;
+    float: left;
+    -webkit-animation: myanim2 1s 1.8s backwards;
+    animation: myanim2 1s 1.8s backwards;
+}
+.contact:hover{
+	background: #ffeb00;
+	color: black;
+}
+@keyframes box {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
 
 @media only screen and (max-width: 600px) {
 	.imageSpin{
