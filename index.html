@@ -114,10 +114,9 @@
                                         <div class="intro">
                                             <div class="row">
                                                 <div class="col-md-6 design-std home-page title">
-                                                    <h1 class="display-2  text-white"><span class="a ml2">H</span><span class="a">i</span><span class="a">,</span><br><span class="a">I</span><span class="a">'</span><span class="a">m</span>&nbsp;<span class="a">D</span><span class="a">a</span><span class="a">n</span><span class="a">i</span><span class="a">s</span><span class="a">h</span><span class="a">,</span><br><span class="a">w</span><span class="a">e</span><span class="a">b</span>&nbsp;<span class="a">d</span><span class="a">e</span><span class="a">v</span><span class="a">e</span><span class="a">l</span><span class="a">o</span><span class="a">p</span><span class="a">e</span><span class="a">r</span><span class="a">,</span></h1>
+                                                    <h1 class="display-2  text-white">Hi,<br /> I’m &nbsp;Danish,<br /> web&nbsp;developer.</h1>
 
-                                                    
-                                                    <h2 class="">Front End Developer / WordPress Expert</h2>
+                                                    <h2 class="ml2">Front End Developer / WordPress Expert</h2>
 
                                                     <a rel="contact" href="#" class="contact"> Contact me! </a>
                                                 </div>
@@ -431,7 +430,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
    <script type="text/javascript">
         // Wrap every letter in a span
-        var textWrapper = document.querySelector('.a');
+        var textWrapper = document.querySelector('.ml2');
         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
         anime.timeline({loop: true})
@@ -452,7 +451,16 @@
         });
     </script>
     
-   
+   <script type="text/javascript">
+       $(document).ready(function () {
+          var letters = $('h1').text();
+          var nHTML = '';
+          for (var letter of letters) {
+            nHTML += "<span class='a'>" + letter + "</span>";
+          }
+          $('h1').html(nHTML);
+        })
+   </script>
     
    
 </body>
